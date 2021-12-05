@@ -1,36 +1,59 @@
 import React from 'react'
 import { View, Text, TouchableOpacity, StyleSheet, Image } from 'react-native'
+import * as Animatable from 'react-native-animatable';
 
-const ListItems = ({name, symbol, currentPrice, priceChangePercentage7d, logoUrl, onPress}) => {
-    const priceChangeColor = priceChangePercentage7d > 0 ? 'green' : 'red';    
+const ListItems = ({name, score, position, onPress}) => {
+    
+    var quote;
+    var numberColor;
+    if (position==1){
+        numberColor = "gold"
+        quote = "The Big Boss"
+    }
+    else if (position==2){
+        numberColor = "silver"
+        quote = "Never Say Never"
+    }
+    else if (position==3){
+        numberColor = "brown"
+        quote = "Almost There"
+    }
+    else{
+        numberColor = "black"
+        quote = ""
+    }
+
     return (
         <TouchableOpacity onPress={onPress}>
-            <View style={styles.itemWrapper}>
+            <View animation="fadeInUpBig" style={styles.itemWrapper}>
                 {/*Left Side*/}
                 <View style={styles.leftWrapper}>
-                    <Image source= {{uri: logoUrl}} style= {styles.image}/>
+                    <Text style={{fontSize: 50,fontWeight: "bold", color: numberColor}}>{position}</Text>
                     <View style={styles.titlesWrapper}>
-                        <Text style={styles.title}>{name}</Text>
-                        <Text style={styles.subtitle}>{symbol.toUpperCase()}</Text>
+                        <Text style={{fontSize: 20}}>{name}</Text>
+                        <Text style={{fontSize: 15, color: numberColor}}>{quote}</Text>
                     </View>
                 </View>
 
                 {/*Right Side*/}
                 <View style={styles.rightWrapper}>
-                    <Text style={styles.title}>${currentPrice.toLocaleString('en-US', {currency: 'USD'})}</Text>
-                    <Text style={[styles.subtitle, {color: priceChangeColor}]}>{priceChangePercentage7d.toFixed(2)}%</Text>
+                    <Text style={styles.titleRight}>{score}</Text>
                 </View>
            </View>
         </TouchableOpacity>
     )
 }
 
-
 const styles = StyleSheet.create({
+
+    leadNumber: {
+        fontSize: 50,
+        fontWeight: "bold"
+    },
     
     itemWrapper: {
-        paddingHorizontal:16,
-        marginTop: 24,
+        paddingHorizontal:20,
+        marginTop: 30,
         flexDirection: "row",
         justifyContent: 'space-between',
         alignItems: "center"
@@ -52,10 +75,14 @@ const styles = StyleSheet.create({
     },
     rightWrapper: {
         alignItems: 'flex-end',
-
     },
-    title: {
-        fontSize: 18,
+
+    titleLeft: {
+        fontSize: 20,
+    },
+    titleRight: {
+        fontSize: 35,
+        fontWeight: "bold",
     },
     subtitle: {
         marginTop: 4,

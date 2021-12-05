@@ -1,127 +1,88 @@
-import React, {useEffect} from "react";
-import { NavigationContainer } from "@react-navigation/native";
-import Tabs from './navigation/tabs'
-import RootStackScreen from "./screens/RootStackScreen";
-import { View } from "react-native";
-import { ActivityIndicator } from "react-native-paper";
-import { AuthContext } from "./components/context";
-
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import React, { useState, useEffect} from 'react';
+import { FlatList, SafeAreaView, StyleSheet, Text, View, RefreshControl} from 'react-native';
+import ListItems from './components/listItems';
+import {getMarkedData} from './services/CryptoService';
 
 
-const App = () =>{
+const App = () => {
 
-  const [isLoading, setIsLoading] = React.useState(true);
-  const [userToken, setUserToken] = React.useState(null);
-
-  const initialLoginState = {
-    isLoading: true,
-    userName: null,
-    userToken: null,
-  };
-
-  const loginReducer = (prevState, action) => {
-    switch( action.type ) {
-      case 'RETRIEVE_TOKEN': 
-        return {
-          ...prevState,
-          userToken: action.token,
-          isLoading: false,
-        };
-      case 'LOGIN': 
-        return {
-          ...prevState,
-          userName: action.id,
-          userToken: action.token,
-          isLoading: false,
-        };
-      case 'LOGOUT': 
-        return {
-          ...prevState,
-          userName: null,
-          userToken: null,
-          isLoading: false,
-        };
-      case 'REGISTER': 
-        return {
-          ...prevState,
-          userName: action.id,
-          userToken: action.token,
-          isLoading: false,
-        };
-    }
-  };
-
-  const [loginState, dispatch] = React.useReducer(loginReducer, initialLoginState);
-
-  const authContext = React.useMemo(() => ({
-    signIn: async(foundUser) => {
-      // setUserToken('fgkj');
-      // setIsLoading(false);
-
-      const userToken = String(foundUser[0].userToken);
-      const userName = foundUser[0].username;
-      
-      try {
-        await AsyncStorage.setItem('userToken', userToken);
-      } catch(e) {
-        console.log(e);
-      }
-      // console.log('user token: ', userToken);
-      dispatch({ type: 'LOGIN', id: userName, token: userToken });
-    },
-    
-    signOut: async() => {
-      // setUserToken(null);
-      // setIsLoading(false);
-      try {
-        await AsyncStorage.removeItem('userToken');
-      } catch(e) {
-        console.log(e);
-      }
-      dispatch({ type: 'LOGOUT' });
-    },
-    signUp: () => {
-      // setUserToken('fgkj');
-      // setIsLoading(false);
-    },
-  }), []);
-
+  const [data, setData] = useState([]);
   useEffect(() => {
-    setTimeout(async() => {
-      // setIsLoading(false);
-      let userToken;
-      userToken = null;
-      try {
-        userToken = await AsyncStorage.getItem('userToken');
-      } catch(e) {
-        console.log(e);
-      }
-      // console.log('user token: ', userToken);
-      dispatch({ type: 'RETRIEVE_TOKEN', token: userToken });
-    }, 1000);
-  }, []);
-
-  if(loginState.isLoading){
-    return(
-      <View style={{flex:1,justifyContent:'center', alignItems:'center'}}>
-        <ActivityIndicator size="large"/>
-      </View>
-    )
-  }
-
-
-  return(
-    <AuthContext.Provider value = {authContext}>
-      <NavigationContainer>
-      { loginState.userToken !== null ? (
-        <Tabs />
-      )
-      :
-      <RootStackScreen/>
+    const fetchMarkedData = async () => {
+      const marketData = await getMarkedData();
+      setData(marketData);
     }
-      </NavigationContainer>
-    </AuthContext.Provider>
+    fetchMarkedData();
+  },[])
+
+  return (
+      <SafeAreaView>
+        <View style={styles.titleView}>
+          <Text style ={styles.LargeTitle}>Top Score Leaderboard</Text>
+        </View>
+        <View style={styles.divider}/>
+
+        <FlatList
+          refreshControl = {<RefreshControl/>}
+          keyExtractor = {(item) => item.username}
+          data = {data} //SAMPLE_DATA can be used too
+          renderItem={({item}) => (
+            <ListItems 
+              name={item.username} 
+              score={item.score} 
+              position= {item.position} 
+            />
+          )}
+        />
+      </SafeAreaView>
   );
 }
 export default App;
+
+
+//Style
+const styles = StyleSheet.create({
+
+  Image:{
+    height: 30,
+    width: 30,
+  },
+
+  Button:{
+    alignSelf:'flex-end'
+  },
+
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+  },
+
+  divider:{
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: "black",
+    marginHorizontal: 16,
+    marginTop: 16,
+  },
+
+  titleView:{
+    marginTop: 10,
+    flexDirection:'row',
+  },
+
+  LargeTitle:{
+    fontSize: 24,
+    fontWeight: "bold",
+    paddingHorizontal:30,
+  },
+
+  bottomeSheet:{
+    shadowColor: "black",
+    shadowOffset:{
+      width:0,
+      height:-4,
+    },
+    shadowOpacity: 0.25,
+    shadowRadius: 4,
+    elevation: 5,
+  },
+});
