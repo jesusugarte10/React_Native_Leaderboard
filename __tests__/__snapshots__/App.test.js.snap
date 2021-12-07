@@ -1,0 +1,1297 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<App /> constructing page 1`] = `
+<View
+  style={
+    Object {
+      "alignItems": "center",
+      "flex": 1,
+      "justifyContent": "center",
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "alignItems": "center",
+        "height": "100%",
+        "justifyContent": "center",
+        "paddingTop": 60,
+        "position": "absolute",
+        "width": "100%",
+      }
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontFamily": "Sancreek",
+          },
+          Object {
+            "fontSize": 50,
+            "marginBottom": 10,
+          },
+        ]
+      }
+    >
+      Dungeon Run
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "#fff",
+            "fontFamily": "Sancreek",
+          },
+          Object {
+            "fontSize": 20,
+            "marginBottom": 45,
+          },
+        ]
+      }
+    >
+      Leaderboard
+    </Text>
+    <RCTScrollView
+      data={
+        Array [
+          Object {
+            "position": 1,
+            "score": 10000000000000000000,
+            "username": "kennysub10",
+          },
+          Object {
+            "position": 2,
+            "score": 1000000000,
+            "username": "Generous.Sex",
+          },
+          Object {
+            "position": 3,
+            "score": 8299,
+            "username": "isaacemerald",
+          },
+          Object {
+            "position": 4,
+            "score": 6955,
+            "username": "SpookyGhost",
+          },
+          Object {
+            "position": 5,
+            "score": 3176,
+            "username": "UserMM",
+          },
+          Object {
+            "position": 6,
+            "score": 1944,
+            "username": "jesus1",
+          },
+          Object {
+            "position": 7,
+            "score": 1630,
+            "username": "notis",
+          },
+          Object {
+            "position": 8,
+            "score": 1128,
+            "username": "hypers321",
+          },
+          Object {
+            "position": 9,
+            "score": 404,
+            "username": "oof",
+          },
+          Object {
+            "position": 10,
+            "score": 100,
+            "username": "Industrious.Shop",
+          },
+        ]
+      }
+      getItem={[Function]}
+      getItemCount={[Function]}
+      keyExtractor={[Function]}
+      onContentSizeChange={[Function]}
+      onLayout={[Function]}
+      onMomentumScrollBegin={[Function]}
+      onMomentumScrollEnd={[Function]}
+      onScroll={[Function]}
+      onScrollBeginDrag={[Function]}
+      onScrollEndDrag={[Function]}
+      refreshControl={
+        <RefreshControlMock
+          onRefresh={[Function]}
+          refreshing={false}
+        />
+      }
+      removeClippedSubviews={false}
+      renderItem={[Function]}
+      scrollEventThrottle={50}
+      stickyHeaderIndices={Array []}
+      style={
+        Object {
+          "width": "100%",
+        }
+      }
+      viewabilityConfigCallbackPairs={Array []}
+    >
+      <RCTRefreshControl />
+      <View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "gold",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  1
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    kennysub10
+                  </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "color": "gold",
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    The Big Boss
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  999999
+                  +
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "silver",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  2
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    Generous.Sex
+                  </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "color": "silver",
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Never Say Never
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  999999
+                  +
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "brown",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  3
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    isaacemerald
+                  </Text>
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "color": "brown",
+                          "fontSize": 15,
+                        },
+                      ]
+                    }
+                  >
+                    Almost There
+                  </Text>
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  8299
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  4
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    SpookyGhost
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  6955
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  5
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    UserMM
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  3176
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  6
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    jesus1
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  1944
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  7
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    notis
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  1630
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  8
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    hypers321
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  1128
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  9
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    oof
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  404
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          onLayout={[Function]}
+          style={null}
+        >
+          <View
+            accessible={true}
+            focusable={false}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "opacity": 1,
+              }
+            }
+          >
+            <View
+              animation="fadeInUpBig"
+              style={
+                Object {
+                  "alignItems": "center",
+                  "flexDirection": "row",
+                  "justifyContent": "space-between",
+                  "marginBottom": 30,
+                  "paddingHorizontal": 20,
+                }
+              }
+            >
+              <View
+                style={
+                  Object {
+                    "alignItems": "center",
+                    "flexDirection": "row",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "color": "white",
+                        "fontSize": 50,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  10
+                </Text>
+                <View
+                  style={
+                    Object {
+                      "marginleft": 8,
+                    }
+                  }
+                >
+                  <Text
+                    style={
+                      Array [
+                        Object {
+                          "color": "#fff",
+                          "fontFamily": "Sancreek",
+                        },
+                        Object {
+                          "fontSize": 20,
+                        },
+                      ]
+                    }
+                  >
+                    Industrious.Shop
+                  </Text>
+                  <View />
+                </View>
+              </View>
+              <View
+                style={
+                  Object {
+                    "alignItems": "flex-end",
+                  }
+                }
+              >
+                <Text
+                  style={
+                    Array [
+                      Object {
+                        "color": "#fff",
+                        "fontFamily": "Sancreek",
+                      },
+                      Object {
+                        "fontSize": 30,
+                        "fontWeight": "bold",
+                      },
+                    ]
+                  }
+                >
+                  100
+                  
+                </Text>
+              </View>
+            </View>
+          </View>
+        </View>
+        <View
+          style={
+            Object {
+              "height": 0,
+            }
+          }
+        />
+      </View>
+    </RCTScrollView>
+  </View>
+</View>
+`;
