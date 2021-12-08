@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "DungeonRide",
-    "slug": "DungeonRide",
+    "name": "DungeonRun",
+    "slug": "DungeonRun",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./app/assets/icon.png",

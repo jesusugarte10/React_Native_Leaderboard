@@ -7,7 +7,7 @@ import {colors, quotes, styles, typos} from './styles';
 
 export async function getLeaderboard() {
   try {
-    const response = await axios.post('https://dungeonride.herokuapp.com/api/getLeaderboard');
+    const response = await axios.post('https://dungeonrun.herokuapp.com/api/getLeaderboard');
     return response.data.leaderboard;
   } catch (e) {
     console.log(e.toString());
